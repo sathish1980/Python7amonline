@@ -14,6 +14,8 @@ print(courses.get("course6")) # retreive the value from dictonary and it will re
 print(courses.keys()) # to get all the keys
 for eachvalue in courses.keys():
     print(courses.get(eachvalue))
+for eachvalue in courses.keys():
+    print(courses[eachvalue])
 print(courses.values()) # to get all the values
 for eachvalue in courses.values():
     print(eachvalue)
@@ -45,10 +47,18 @@ for key,val in newcourse.items():
 fruits=("apple","ootty apple","kashmir apple")
 price =200
 
+tupletolist=list(fruits)
+print(tupletolist)
 appleprice=dict.fromkeys(fruits,price)
 print(appleprice)
 courses.setdefault("course2",".Net")
 print(courses)
+
+
+
+
+
+
 
 
 
